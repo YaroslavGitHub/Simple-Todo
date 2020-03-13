@@ -1,0 +1,15 @@
+.red {
+  width: 450px;
+  border: 1px dashed tomato;
+  padding: 1 rem;
+  margin-bottom: 1rem;
+  background: red
+}
+
+.blue {
+  width: 450px;
+  border: 1px dashed tomato;
+  padding: 1 rem;
+  margin-bottom: 1rem;
+  background: blue
+}

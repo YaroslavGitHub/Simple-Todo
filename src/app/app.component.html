@@ -1,0 +1,16 @@
+<div class="container">
+  <h2>{{ title }}</h2>
+
+  <app-todo-post
+
+(onAdd)="updatePosts($event)"
+
+></app-todo-post>
+
+<app-todo
+*ngFor="let p of posts"
+[post]="p"
+(onRemove)="removePost($event)"
+></app-todo>
+<router-outlet></router-outlet>
+
