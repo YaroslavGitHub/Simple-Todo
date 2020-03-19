@@ -18,7 +18,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: RoyalBlue;
+  background-color: black;
 }
 
 li {
@@ -29,17 +29,18 @@ li a {
   display: block;
   color: white;
   text-align: center;
+  margin: 0;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: grey;
+  padding: 14px 16px;
 }
 .active {
   width: 450px;
-  border: 1px dashed tomato;
-  padding: 1 rem;
-  margin-bottom: 1rem;
-  background: blue
+ 
+  padding: 14px 16px;
+  background: grey
 }

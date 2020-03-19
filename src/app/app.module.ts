@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { TodoPostComponent } from './todo-post/todo-post.component';
 import { HomeComponent } from './home/home.component';
 import { PostsComponent } from './posts/posts.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PostsComponent } from './posts/posts.component';
     TodoComponent,
     TodoPostComponent,
     HomeComponent,
-    PostsComponent
+    PostsComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
