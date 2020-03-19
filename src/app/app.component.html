@@ -1,16 +1,13 @@
-<div class="container">
-  <h2>{{ title }}</h2>
+<ul>
+  <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" ><a [routerLink]="['/']">Home</a></li>
+  <li routerLinkActive="active"><a [routerLink]="['/todo']">Todo</a></li>
+  <li routerLinkActive="blue"><a [routerLink]="['/posts']">List of todos</a></li>
+  <li routerLinkActive="active"><a [routerLink]="['/home']">About</a></li>
+</ul>
+  <div class="container">
 
-  <app-todo-post
 
-(onAdd)="updatePosts($event)"
 
-></app-todo-post>
 
-<app-todo
-*ngFor="let p of posts"
-[post]="p"
-(onRemove)="removePost($event)"
-></app-todo>
 <router-outlet></router-outlet>
 
