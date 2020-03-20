@@ -3,6 +3,8 @@
   <li routerLinkActive="active"><a [routerLink]="['/error']">Error</a></li>
   <li routerLinkActive="active"><a [routerLink]="['/posts']">List of todos</a></li>
   <li routerLinkActive="active"><a [routerLink]="['/home']">About</a></li>
+  <li><button class="btn" (click)="auth.login()" >Login</button> </li>
+  <li><button class="btn" (click)="auth.logout()">Logout</button> </li>
 </ul>
   <div class="container">
 
