@@ -1,5 +1,6 @@
 import { Component} from '@angular/core';
 import { AuthService } from './auth.service';
+import { ReactiveFormsModule} from '@angular/forms'
 
 
 export interface Post {

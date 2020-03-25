@@ -5,6 +5,7 @@ import {TodoComponent} from './todo/todo.component';
 import {PostsComponent} from './posts/posts.component'
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { AuthGuard } from './auth.guard';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'posts', component: PostsComponent, canActivate: [AuthGuard]},
   {path: 'home', component: HomeComponent},
   {path: 'error', component: ErrorPageComponent},
+  {path: 'admin', component: LoginPageComponent},
   {path:"**", redirectTo:'/error'}
 ];
 
