@@ -18,7 +18,11 @@
   <input id="password" type="password" formControlName="password">
   <div class="validation"
   *ngIf="form.get('password').touched && form.get('password').invalid">
-    <small>password</small>
+  <small *ngIf="form.get('password').errors.required"> Enter password</small>
+  <small *ngIf="form.get('password').errors.minlength"> password no less then
+    {{form.get('password').errors.minlength.requiredLength}} now it 
+    {{form.get('password').errors.minlength.actualLength}}
+  </small>
   </div>
 </div>
 <button type="submit" class="btn btn-primary" [disabled]="form.invalid" >Enter</button>
