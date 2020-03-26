@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { AuthService } from './auth.service';
+/*import { AuthService } from './auth.service';*/
 import { ReactiveFormsModule} from '@angular/forms'
 
 
@@ -16,7 +16,6 @@ export interface Post {
 })
 
 export class AppComponent {
-  constructor(private auth: AuthService) {}
 
   now: Date = new Date()
   title= "home page"
