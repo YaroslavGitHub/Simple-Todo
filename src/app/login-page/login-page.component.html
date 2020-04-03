@@ -1,5 +1,6 @@
 <form class="card" [formGroup]="form" (ngSubmit)="submit()">
 <h2> Admin page</h2>
+
 <div class="alert alert-danger" *ngIf="auth.e$ | async as e"> {{e}}</div>
 
 <div class="form-group"
@@ -29,5 +30,6 @@
 <button type="submit" class="btn btn-primary" [disabled]="form.invalid || submitted" >Enter</button>
 </form>
 <div>
+
 
 </div>

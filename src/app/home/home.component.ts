@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { createAction } from '@ngrx/store';
+import { SharedModule } from '../shared/shared.module';
 
 @Component({
   selector: 'app-home',
