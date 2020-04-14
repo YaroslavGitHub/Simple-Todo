@@ -1,3 +1,4 @@
+<div cdkDropListGroup>
 <div class="container">
   <h2>To do</h2>
 
@@ -15,3 +16,23 @@
     <div class="list-item" *ngFor="let item of done" cdkDrag>{{item}}</div>
   </div>
 </div>
+
+<div class="container">
+  <h2>Next</h2>
+
+  <div cdkDropList #nextList="cdkDropList" [cdkDropListData]="next"
+      [cdkDropListConnectedTo]="nextList" class="list" (cdkDropListDropped)="drop($event)">
+    <div class="list-item" *ngFor="let item of next" cdkDrag>{{item}}</div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Live</h2>
+
+  <div cdkDropList #liveList="cdkDropList" [cdkDropListData]="live"
+      [cdkDropListConnectedTo]="liveList" class="list" (cdkDropListDropped)="drop($event)">
+    <div class="list-item" *ngFor="let item of live" cdkDrag>{{item}}</div>
+  </div>
+</div>
+</div>
+

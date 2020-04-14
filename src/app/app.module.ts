@@ -80,4 +80,6 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  ngDoBootstrap() {}
+}

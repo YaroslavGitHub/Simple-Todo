@@ -14,12 +14,25 @@ export class TodoDropComponent {
     'Fall asleep'
   ];
 
+  next = [
+    'Get to work 1',
+    'Pick up groceries 2',
+    'Go home 2',
+    'Fall asleep 9'
+  ];
+
   done = [
     'Get up',
     'Brush teeth',
     'Take a shower',
     'Check e-mail',
-    'Walk dog'
+    'Walk dog',
+    'Cut grass'
+  ];
+
+  live = [
+    'Clean flour',
+    'Swim'
   ];
 
   drop(event: CdkDragDrop<string[]>) {
