@@ -36,7 +36,7 @@ export class AuthService {
       const {message} = e.error.error
       switch (message) {
         case 'INVALID_EMAIL':
-          this.e$.next('Wrong email')
+          this.e$.next('Wrong email, please set right one')
           break
         case 'INVALID_PASSWORD':
           this.e$.next('Wrong password')
