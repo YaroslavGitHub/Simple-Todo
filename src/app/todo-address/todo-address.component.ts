@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, Validators, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-todo-address',
@@ -87,7 +87,4 @@ export class TodoAddressComponent {
 
   constructor(private fb: FormBuilder) {}
 
-  onSubmit() {
-    alert('Thanks!');
-  }
 }

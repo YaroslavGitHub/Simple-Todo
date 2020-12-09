@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Post } from '../app.component';
+import { from } from 'rxjs';
+import { pluck } from 'rxjs/operators';
 
 @Component({
   selector: 'app-posts',
@@ -8,11 +10,20 @@ import { Post } from '../app.component';
 })
 export class PostsComponent implements OnInit {
 
-  posts: Post[] = [
+    posts: Post[] = [
     {title: 'Lorem 1', id: 1},
     {title: 'Lorem new', id: 2},
     {title: 'todo next', id: 3}
   ]
+  postsX = from(
+    [
+      {title: 'Lorem 1', id: 1},
+      {title: 'Lorem new', id: 2},
+      {title: 'todo next', id: 3}
+    ]
+  )
+  example = this.postsX.pipe(pluck('title'));
+  subscribe = this.example.subscribe(val => console.log(val));
 
   updatePosts(post: Post) {
     this.posts.unshift(post)
